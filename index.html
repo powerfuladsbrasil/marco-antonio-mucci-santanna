@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Psicoterapia acolhedora e profissional para quem busca mais clareza, equilíbrio e bem-estar emocional." />
+  <title>Psicologia | Atendimento acolhedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile-fixes.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#topo" aria-label="Início">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span class="brand-copy">
+            <strong data-bind="name">Nome da Profissional</strong>
+            <small data-bind="brandSubtitle">Psicóloga Clínica</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#ajuda">Como posso ajudar</a>
+          <a href="#atendimento">Atendimento</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-sm btn-primary" data-link="whatsapp" href="#">Agendar conversa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow" data-bind="heroEyebrow">Psicoterapia com acolhimento e presença</span>
+            <h1 data-bind="headline">Você não precisa carregar tudo sozinha.</h1>
+            <p class="hero-lead" data-bind="subheadline">Um espaço seguro para compreender o que você sente, cuidar dos seus vínculos e construir mudanças com mais clareza e leveza.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" data-link="whatsapp" href="#">Quero conversar pelo WhatsApp</a>
+              <a class="btn btn-ghost" href="#sobre">Conheça meu trabalho</a>
+            </div>
+            <div class="micro-proof">
+              <span>Atendimento acolhedor</span>
+              <span>Online e/ou presencial</span>
+              <span>Sigilo e ética profissional</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1">
+            <div class="photo-frame portrait-card">
+              <div class="image-placeholder" data-image="hero">
+                <span>Foto profissional</span>
+              </div>
+              <div class="portrait-caption">
+                <strong data-bind="name">Nome da Profissional</strong>
+                <span data-bind="credentialLine">Psicóloga • CRP 00/000000</span>
+              </div>
+            </div>
+            <div class="status-pill">● Agenda aberta</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="identificacao">
+        <div class="container narrow center">
+          <span class="eyebrow">Talvez você se reconheça aqui</span>
+          <h2>Como você tem se sentido ultimamente?</h2>
+          <p class="section-intro">Alguns sinais aparecem de forma silenciosa. Quando eles começam a pesar no dia a dia, buscar apoio pode ser o início de uma mudança importante.</p>
+        </div>
+        <div class="container card-grid symptoms-grid" id="symptomsGrid"></div>
+        <div class="container center section-note">Você não precisa esperar tudo ficar insustentável para começar a cuidar de si.</div>
+      </section>
+
+      <section class="section" id="posicionamento">
+        <div class="container split align-center">
+          <div class="copy-block reveal">
+            <span class="eyebrow">Um espaço para cuidar de você</span>
+            <h2>Psicoterapia não é sobre “dar conta de tudo”. É sobre aprender a se escutar.</h2>
+            <p data-bind="positioningText">Na terapia, você encontra um espaço seguro para compreender padrões, nomear emoções e construir respostas mais conscientes para aquilo que hoje parece confuso ou pesado.</p>
+            <ul class="check-list" id="benefitsList"></ul>
+          </div>
+          <div class="info-stack reveal delay-1" id="positioningCards"></div>
+        </div>
+      </section>
+
+      <section class="section section-soft-pattern" id="sobre">
+        <div class="container about-card reveal">
+          <div class="about-photo photo-frame">
+            <div class="image-placeholder tall" data-image="about">
+              <span>Foto da profissional</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">Sobre mim</span>
+            <h2 data-bind="aboutTitle">Prazer, eu sou [Nome].</h2>
+            <div data-bind-html="aboutText"></div>
+            <div class="credentials" id="credentialsList"></div>
+            <a class="text-link" data-link="whatsapp" href="#">Quero saber mais sobre o atendimento →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ajuda">
+        <div class="container narrow center">
+          <span class="eyebrow">Como posso ajudar</span>
+          <h2>Atendimento pensado para diferentes momentos da sua vida</h2>
+          <p class="section-intro">Cada pessoa chega com uma história, uma necessidade e um ritmo. O processo terapêutico é construído respeitando essa singularidade.</p>
+        </div>
+        <div class="container services-list" id="servicesList"></div>
+      </section>
+
+      <section class="section section-muted" id="atendimento">
+        <div class="container split top-gap">
+          <div class="copy-block">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Atendimento simples, humano e sem complicação</h2>
+            <p data-bind="attendanceIntro">As sessões são realizadas com horário agendado, em ambiente acolhedor e com total confidencialidade.</p>
+            <a class="btn btn-primary" data-link="whatsapp" href="#">Agendar primeira conversa</a>
+          </div>
+          <div class="attendance-grid" id="attendanceGrid"></div>
+        </div>
+      </section>
+
+      <section class="section journey-section">
+        <div class="container narrow center">
+          <span class="eyebrow">Sua jornada pode começar assim</span>
+          <h2>4 passos para começar</h2>
+        </div>
+        <div class="container steps-grid" id="stepsGrid"></div>
+        <div class="container center cta-line">
+          <p>Às vezes, começar é só enviar uma mensagem.</p>
+          <a class="btn btn-primary" data-link="whatsapp" href="#">Dar o primeiro passo</a>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="depoimentos">
+        <div class="container narrow center">
+          <span class="eyebrow">Relatos</span>
+          <h2>Experiências de quem já passou pelo processo</h2>
+        </div>
+        <div class="container testimonials-grid" id="testimonialsGrid"></div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-heading">
+            <span class="eyebrow">Perguntas frequentes</span>
+            <h2>Tire suas dúvidas antes de começar</h2>
+            <p>Se sua dúvida não estiver aqui, você pode falar diretamente pelo WhatsApp.</p>
+            <a class="btn btn-ghost" data-link="whatsapp" href="#">Falar comigo</a>
+          </div>
+          <div class="accordion" id="faqList"></div>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container final-cta-inner">
+          <div>
+            <span class="eyebrow">Seu cuidado pode começar hoje</span>
+            <h2>Vamos conversar sobre o que você está vivendo?</h2>
+            <p>Sem compromisso. Me conte brevemente o que você busca e eu te explico como funciona o atendimento.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" data-link="whatsapp" href="#">Conversar pelo WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span class="brand-copy">
+              <strong data-bind="name">Nome da Profissional</strong>
+              <small data-bind="credentialLine">Psicóloga • CRP 00/000000</small>
+            </span>
+          </div>
+          <p class="footer-note">Atendimento psicológico com ética, escuta e acolhimento.</p>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <a data-link="whatsapp" href="#" data-bind="whatsappDisplay">(00) 00000-0000</a>
+          <a data-link="instagram" href="#" data-bind="instagramHandle">@seuinstagram</a>
+          <span data-bind="location">Cidade - UF</span>
+        </div>
+        <div>
+          <h3>Atendimento</h3>
+          <span data-bind="modality">Online e presencial</span>
+          <span data-bind="schedule">Seg a Sex • 08h às 19h</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> <span data-bind="name">Nome da Profissional</span></span>
+        <span>Desenvolvido pela Powerful Ads</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="client-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
